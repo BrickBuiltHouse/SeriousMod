@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "seriousmod",
+  "version": "${version}",
+  "name": "SeriousMod",
+  "description": "A very serious mod ...",
+  "authors": [
+    "BrickBuiltHouse",
+    "ClassicChair"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/seriousmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.seriousmod.client.SeriousModDataGenerator"
+    ],
+    "client": [
+      "com.seriousmod.client.SeriousModClient"
+    ],
+    "main": [
+      "com.seriousmod.SeriousMod"
+    ]
+  },
+  "mixins": [
+    "seriousmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
