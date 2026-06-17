@@ -12,11 +12,12 @@ public class SeriousMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModItems.initialize();
         ModBlocks.initialize();
         ModEnchantments.initialize();
-        ModStatusEffects.initialize();
-        ModSoundEvents.initialize();
+        ModEntities.initialize();
         ModItemGroups.initialize();
+        ModItems.initialize();
+        ModSoundEvents.initialize();
+        ModStatusEffects.initialize();
     }
 }
